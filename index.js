@@ -1,26 +1,42 @@
-// Comment
-//console.log('Hello World');
+// Comment Line
 
+// Object Literal
 let person = {
-  // Object Literal
   name: 'Semih',
   age: 39,
-  //   address,
+  //   address,         // undefined olduğu için hata verir
 };
 
-// person.name = 'John'; // dot notation
-// person['name'] = 'John'; // bracket notation
+// person.name = 'John';        // dot notation
+// person['name'] = 'John';     // bracket notation
 
-// let selection = 'name';     // user's selection
+// let selection = 'name';      // user's selection
 // person[selection] = 'John';
 
 //console.log(person);
 
 let selectedColors = ['red', 'blue'];
-console.log(selectedColors[0]);
+console.log(`Index 0 of the array is`, selectedColors[0]);
 
 selectedColors.push('green'); // ya da selectedColors[2] = 'green' yazılabilir.
-console.log(selectedColors);
+// console.log(selectedColors);
+// selectedColors[2] = 23;
+// console.log(selectedColors);
 
-selectedColors[2] = 23;
+console.log(`Array's lenght is`, selectedColors.length);
+console.log(`Index of 'blue' is`, selectedColors.indexOf('blue'));
+
+// Performing a task
+function greet(name, lastName) {
+  console.log('Welcome ' + name + ' ' + lastName + '!');
+}
+
+// Calculating a value
+function add(a, b) {
+  return a + b;
+}
+
+greet('Semih', 'SENOL');
+
+selectedColors[2] = add(5, 8);
 console.log(selectedColors);
