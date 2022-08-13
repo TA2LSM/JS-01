@@ -13,7 +13,8 @@ let person = {
 // let selection = 'name';      // user's selection
 // person[selection] = 'John';
 
-//console.log(person);
+console.log(person);
+//-----------------------------------------------------
 
 let selectedColors = ['red', 'blue'];
 console.log(`Index 0 of the array is`, selectedColors[0]);
@@ -40,3 +41,16 @@ greet('Semih', 'SENOL');
 
 selectedColors[2] = add(5, 8);
 console.log(selectedColors);
+//-----------------------------------------------------
+
+let points = 110;
+let type = points > 100 ? 'gold' : 'silver';
+console.log(type);
+//-----------------------------------------------------
+
+// let userColor = 'red';
+let userColor = ''; // ya da undefined dersek çıktı blue olur. yukardaki gibi tanımlarsak red olur.
+let selectedColor = 'blue';
+let currentColor = userColor || selectedColor;
+console.log(selectedColor);
+//-----------------------------------------------------
